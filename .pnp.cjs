@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["autoprefixer", "virtual:c5937c82034258df367f143aa9df0a5fd29fb625485ee7df07b7af83452a61581dd01dd40c9e8405d05979e4bb49e0bd2ceaea2b66f07ca0ed12fd25079286e0#npm:10.4.16"],\
             ["eslint", "npm:8.52.0"],\
             ["eslint-config-next", "virtual:c5937c82034258df367f143aa9df0a5fd29fb625485ee7df07b7af83452a61581dd01dd40c9e8405d05979e4bb49e0bd2ceaea2b66f07ca0ed12fd25079286e0#npm:13.5.6"],\
+            ["git-cz", "npm:4.9.0"],\
             ["next", "virtual:c5937c82034258df367f143aa9df0a5fd29fb625485ee7df07b7af83452a61581dd01dd40c9e8405d05979e4bb49e0bd2ceaea2b66f07ca0ed12fd25079286e0#npm:13.5.6"],\
             ["postcss", "npm:8.4.31"],\
             ["react", "npm:18.2.0"],\
@@ -2216,6 +2217,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["get-tsconfig", "npm:4.7.2"],\
             ["resolve-pkg-maps", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["git-cz", [\
+        ["npm:4.9.0", {\
+          "packageLocation": "./.yarn/unplugged/git-cz-npm-4.9.0-8d9f9f3b3b/node_modules/git-cz/",\
+          "packageDependencies": [\
+            ["git-cz", "npm:4.9.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4805,6 +4815,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["autoprefixer", "virtual:c5937c82034258df367f143aa9df0a5fd29fb625485ee7df07b7af83452a61581dd01dd40c9e8405d05979e4bb49e0bd2ceaea2b66f07ca0ed12fd25079286e0#npm:10.4.16"],\
             ["eslint", "npm:8.52.0"],\
             ["eslint-config-next", "virtual:c5937c82034258df367f143aa9df0a5fd29fb625485ee7df07b7af83452a61581dd01dd40c9e8405d05979e4bb49e0bd2ceaea2b66f07ca0ed12fd25079286e0#npm:13.5.6"],\
+            ["git-cz", "npm:4.9.0"],\
             ["next", "virtual:c5937c82034258df367f143aa9df0a5fd29fb625485ee7df07b7af83452a61581dd01dd40c9e8405d05979e4bb49e0bd2ceaea2b66f07ca0ed12fd25079286e0#npm:13.5.6"],\
             ["postcss", "npm:8.4.31"],\
             ["react", "npm:18.2.0"],\
