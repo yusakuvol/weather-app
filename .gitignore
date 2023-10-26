@@ -36,7 +36,6 @@ next-env.d.ts
 
 # yarn berry
 .yarn/*
-!.yarn/cache
 !.yarn/releases
 !.yarn/plugins
 !.yarn/sdks
