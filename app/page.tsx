@@ -1,3 +1,8 @@
 export default function Page() {
-  return <p>InitialPage</p>
+  return (
+    <main>
+      <h1>Hello, World!</h1>
+      <p>This is a sample page.</p>
+    </main>
+  )
 }
