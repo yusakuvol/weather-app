@@ -12,7 +12,9 @@ export default function LocationInput() {
     try {
       // form data validation
       const schema = z.object({
-        location: z.string().min(1, { message: '地名を入力してください。' }),
+        location: z
+          .string()
+          .min(1, { message: 'Please enter a location name.' }),
       })
       schema.parse({
         location: data.get('location'),
@@ -21,7 +23,7 @@ export default function LocationInput() {
       if (error instanceof z.ZodError) {
         setError(error.errors[0].message)
       } else {
-        setError('エラーが発生しました。')
+        setError('An error occurred.')
       }
       return
     }
@@ -33,7 +35,7 @@ export default function LocationInput() {
   return (
     <form action={handleSubmit}>
       <label htmlFor="location">Location</label>
-      <input type="text" name="location" placeholder="地名を入力" />
+      <input type="text" name="location" placeholder="Enter location name" />
       <button type="submit">Search</button>
       {error && <p>{error}</p>}
     </form>
