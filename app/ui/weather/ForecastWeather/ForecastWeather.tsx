@@ -6,9 +6,6 @@ type Props = {
 
 export default async function ForecastWeather({ location }: Props) {
   const forecastWeather = await fetchForecastWeatherByWord(location)
-
-  console.log()
-
   return (
     <div>
       <h2>Forecast Weather</h2>
