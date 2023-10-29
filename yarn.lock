@@ -1742,7 +1742,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/integration@npm:^6.0.0":
+"@vanilla-extract/integration@npm:^6.0.0, @vanilla-extract/integration@npm:^6.2.0":
   version: 6.2.2
   resolution: "@vanilla-extract/integration@npm:6.2.2"
   dependencies:
@@ -1760,6 +1760,16 @@ __metadata:
     vite: ^4.1.4
     vite-node: ^0.28.5
   checksum: dbff14a91957c47d3ef347d1578588685a9d6408a0cb33e9121df59e9c10482844cf60663fd9d3608a61a3e9578ccd5a303b33c61c238e7e89023197f3950c56
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/jest-transform@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@vanilla-extract/jest-transform@npm:1.1.1"
+  dependencies:
+    "@vanilla-extract/integration": ^6.2.0
+    esbuild: 0.17.6
+  checksum: 98f88ddc2e9a618328adc3ed0c59e3426cee29ee1f3f3310fc21f7f46f6ccc1183d0adb6aa51eafdc2aaf8e6948b732bed676af0be7c566fd3374ad1c2861b6d
   languageName: node
   linkType: hard
 
@@ -7649,6 +7659,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^6.9.0
     "@typescript-eslint/parser": ^6.9.0
     "@vanilla-extract/css": ^1.13.0
+    "@vanilla-extract/jest-transform": ^1.1.1
     "@vanilla-extract/next-plugin": ^2.3.1
     autoprefixer: ^10
     eslint: ^8
