@@ -1,7 +1,7 @@
-import Header from 'ui/components/Header/Header'
-import LocationInput from 'ui/components/LocationInput/LocationInput'
-import CurrentWeather from 'ui/weather/CurrentWeather/CurrentWeather'
-import ForecastWeather from 'ui/weather/ForecastWeather/ForecastWeather'
+import Header from '~/app/ui/components/Header/Header'
+import LocationInput from '~/app/ui/components/LocationInput/LocationInput'
+import CurrentWeather from '~/app/ui/weather/CurrentWeather/CurrentWeather'
+import ForecastWeather from '~/app/ui/weather/ForecastWeather/ForecastWeather'
 
 type Props = {
   searchParams: { [key: string]: string | string[] | undefined }

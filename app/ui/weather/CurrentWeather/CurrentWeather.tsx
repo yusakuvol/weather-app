@@ -1,4 +1,4 @@
-import { fetchCurrentWeatherByWord } from 'lib/data'
+import { fetchCurrentWeatherByWord } from '~/app/lib/data'
 
 type Props = {
   location: string

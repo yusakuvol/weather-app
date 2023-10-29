@@ -14,9 +14,7 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "~/*": ["./*"],
-      "ui/*": ["./app/ui/*"],
-      "lib/*": ["./app/lib/*"]
+      "~/*": ["./*"]
     },
     "plugins": [
       {

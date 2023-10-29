@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { z } from 'zod'
 
-import { redirectByPath } from 'lib/actions'
+import { redirectByPath } from '~/app/lib/actions'
 
 export default function LocationInput() {
   const [error, setError] = useState<string | null>(null)
