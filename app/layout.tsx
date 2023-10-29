@@ -1,4 +1,4 @@
-import { styles } from './layout.css'
+import { styles } from '~/app/layout.css'
 
 export default function RootLayout({
   children,
