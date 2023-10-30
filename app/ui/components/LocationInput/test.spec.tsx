@@ -1,4 +1,3 @@
-// 必要なライブラリをインポート
 import { render, screen } from '@testing-library/react'
 
 import LocationInput from '~/app/ui/components/LocationInput/LocationInput'
