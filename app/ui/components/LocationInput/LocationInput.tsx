@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { z } from 'zod'
 
 import { redirectByPath } from '~/app/lib/actions'
+import { styles } from '~/app/ui/components/LocationInput/LocationInput.css'
 
 export default function LocationInput() {
   const [error, setError] = useState<string | null>(null)
@@ -33,11 +34,24 @@ export default function LocationInput() {
   }
 
   return (
-    <form action={handleSubmit}>
-      <label htmlFor="location">Location</label>
-      <input type="text" name="location" placeholder="Enter location name" />
-      <button type="submit">Search</button>
-      {error && <p>{error}</p>}
-    </form>
+    <section className={styles?.section}>
+      <h2 className={styles?.h2}>Search location</h2>
+      <form action={handleSubmit}>
+        <div className={styles?.inputContainer}>
+          <input
+            type="text"
+            name="location"
+            placeholder="tokyo"
+            className={styles?.input}
+          />
+          <button type="submit" className={styles?.button}>
+            Search
+          </button>
+        </div>
+        <div className={styles?.errorContainer}>
+          {error && <p className={styles?.error}>{error}</p>}
+        </div>
+      </form>
+    </section>
   )
 }
