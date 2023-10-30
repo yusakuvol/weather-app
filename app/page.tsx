@@ -22,7 +22,7 @@ export default function Page({ searchParams }: Props) {
     <>
       <Header />
       <main>
-        <LocationInput />
+        <LocationInput location={location} />
         <CurrentWeather location={location} />
         <ForecastWeather location={location} />
       </main>

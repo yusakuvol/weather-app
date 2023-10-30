@@ -6,7 +6,11 @@ import { z } from 'zod'
 import { redirectByPath } from '~/app/lib/actions'
 import { styles } from '~/app/ui/components/LocationInput/LocationInput.css'
 
-export default function LocationInput() {
+type Props = {
+  location: string
+}
+
+export default function LocationInput({ location }: Props) {
   const [error, setError] = useState<string | null>(null)
 
   const handleSubmit = async (data: FormData) => {
@@ -43,6 +47,7 @@ export default function LocationInput() {
             name="location"
             placeholder="tokyo"
             className={styles?.input}
+            defaultValue={location}
           />
           <button type="submit" className={styles?.button}>
             Search
