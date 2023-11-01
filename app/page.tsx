@@ -1,3 +1,4 @@
+import { styles } from '~/app/page.css'
 import Header from '~/app/ui/components/Header/Header'
 import LocationInput from '~/app/ui/components/LocationInput/LocationInput'
 import CurrentWeather from '~/app/ui/weather/CurrentWeather/CurrentWeather'
@@ -23,8 +24,10 @@ export default function Page({ searchParams }: Props) {
       <Header />
       <main>
         <LocationInput location={location} />
-        <CurrentWeather location={location} />
-        <ForecastWeather location={location} />
+        <div className={styles.weatherContainer}>
+          <CurrentWeather location={location} />
+          <ForecastWeather location={location} />
+        </div>
       </main>
     </>
   )
