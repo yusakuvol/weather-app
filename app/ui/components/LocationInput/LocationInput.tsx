@@ -7,13 +7,9 @@ import { redirectByPath } from '~/app/lib/actions'
 import { fetchLocationByWord } from '~/app/lib/data'
 import { styles } from '~/app/ui/components/LocationInput/LocationInput.css'
 
-type Props = {
-  location: string
-}
-
-export default function LocationInput({ location }: Props) {
+export default function LocationInput() {
   const [error, setError] = useState<string | null>(null)
-  const [text, setText] = useState<string>(location)
+  const [text, setText] = useState<string>('')
   const [isFocus, setIsFocus] = useState<boolean>(false)
   const [options, setOptions] = useState<Array<{ text: string }> | null>(null)
 
